@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&F</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          Sistema L&F
+        </a>
+      </nav>
+      <div class="container mt-5">
+        <h5> Registro de tipos de usuarios</h5>
+
+        <form class="mt-5" id="formTipoUsuarios" onSubmit="crearTipoUsuario(); return false">
+            <div class="row">
+                <div class="col">
+                    <label>Area</label>
+                    <input class="form-control" id="area">
+                </div>
+                <div class="col">
+                    <label>ID del area</label>
+                    <input class="form-control" type="number" id="idA">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <input type="submit"  class="btn btn-primary btn100" value="Guardar" >
+                </div>
+                <div class="col">
+                    <input type="button"  class="btn btn-info btn100" value="Limpiar" onclick="limpiar()">
+                </div>
+            </div>
+
+        </form>
+
+        <div class="row mt-5">
+            <div class="col heightList"  >
+                <label>Tipos de usuarios registrados</label>
+                <ul class="list-group" id="list">
+                </ul>
+            </div>
+            <div class="col">
+                <button class="btn btn-info float-right" onclick="usuarios()">Registrar usuarios ==></button>
+            </div>
+
+        </div>
+
+      </div>
+      <div class="footer" >
+          <div class="container">
+              <div class="row mt-5">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Universidad</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <label >Politécnico Jaime Isaza Cadavid</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Estudiante</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <label href="#!">Juan David Cobos Cano</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Entrega</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <label href="#!">Interfaz</label>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+</body>
+
+<script type="text/javascript" src="js/tiposUsuarios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</html>

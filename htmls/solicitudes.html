@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&F</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          Sistema L&F
+        </a>
+      </nav>
+
+      <div class="row mt-5 marginTop">
+            <div class="col d-flex justify-content-center ">
+                <div onclick="ordeCompra()">
+                    <div class="card text-white bg-info  cardbtn" style="max-width: 30rem;">
+              
+                        <div class="card-body">
+                       
+                          <p class="card-text">Solictud para orden de compra</p>
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+             <div class="col d-flex justify-content-center ">
+                <div class="card text-white bg-info cardbtn " style="max-width: 30rem;">
+
+                    <div class="card-body">
+               
+                      <p class="card-text">Solictud para cotización</p>
+                    </div>
+                  </div>
+
+             </div>
+      </div>
+      
+      <div class="footer" >
+          <div class="container">
+              <div class="row mt-5">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Universidad</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <label >Politécnico Jaime Isaza Cadavid</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Estudiante</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <label href="#!">Juan David Cobos Cano</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Entrega</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <label href="#!">Interfaz</label>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+</body>
+
+<script type="text/javascript" src="../js/ordenCompras.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</html>
