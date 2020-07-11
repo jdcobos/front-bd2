@@ -129,6 +129,32 @@ function cargarUsuarios(){
 }
 
 
+function validarUsuario(){
+  let nDo = Number(numeDo.value);
+  const data = {documento:nDo}
+  axios.post('http://localhost:5000/consultarUserExiste', data)
+  .then(function(res) {
+  
+     if(res.status === 200){
+       if(res.data[0].USUARIO === 0){
+        crearUsuario();
+       }else{
+        Swal.fire({
+          icon: 'warning',
+          title: 'Usuario ya existe, por favor valida el documento',
+          showConfirmButton: false,
+          timer: 4000
+        })
+       }
+     }
+      
+  })
+  .catch(function(err) {
+    console.log(err)
+  })
+}
+
+
 function eliminarRegistro(e){
     console.log(e.id);
     let data =  {
